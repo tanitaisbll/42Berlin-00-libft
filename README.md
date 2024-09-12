@@ -2,7 +2,7 @@
 My own library including standard and non-standard functions in C. <br>
 Includes the following functions:
 
-## ctype.h
+### ctype.h
 int		ft_isalnum(int c)<br>
 int		ft_isalpha(int c)<br>
 int		ft_isascii(int c)<br>
@@ -11,7 +11,7 @@ int		ft_isprint(int c)<br>
 int		ft_toupper(int c)<br>
 int		ft_tolower(int c)<br>
 
-## string.h
+### string.h
 void	ft_bzero(void *str, size_t n)<br>
 void	*ft_memchr(const void *s, int c, size_t n)<br>
 int		ft_memcmp(const void *s1, const void *s2, size_t n)<br>
@@ -27,11 +27,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)<br>
 int		ft_strncmp(const char *s1, const char *s2, size_t n)<br>
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)<br>
 
-## stdlib.h
+### stdlib.h
 int		ft_atoi(const char *nptr)<br>
 void	*ft_calloc(size_t num_elements, size_t element_size)<br>
 
-## non-standard
+### non-standard
 char	*ft_itoa(int n)<br>
 char	*ft_substr(const char *s, unsigned int start, size_t len)<br>
 char	*ft_strjoin(const char *s1, const char *s2)<br>
