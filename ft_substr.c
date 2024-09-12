@@ -1,22 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/04 11:33:36 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:06:09 by tgeiger          ###   ########.fr       */
+/*   Created: 2024/09/12 17:45:56 by tgeiger           #+#    #+#             */
+/*   Updated: 2024/09/12 17:45:59 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
-		|| (c >= '0' && c <= '9'))
-		return (1);
-	else
+	size_t	i;
+	char	*str;
+	char	*temp_s;
+
+	temp_s = (char *)s;
+	i = 0;
+	if (!s)
 		return (0);
+	if (start > (unsigned) ft_strlen(temp_s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(temp_s) - start)
+		len = ft_strlen(temp_s) - start;
+	str = malloc((len +1) * sizeof(char));
+	if (!str)
+		return (0);
+	while (i < len)
+	{
+		str[i] = s[start + i];
+		i++;
+	}
+	str[len] = '\0';
+	return (str);
 }

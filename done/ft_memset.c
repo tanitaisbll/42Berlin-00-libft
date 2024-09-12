@@ -6,55 +6,23 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:50:00 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 13:49:51 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 17:15:43 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *str, int c, size_t n)
 {
-	size_t i;
-	unsigned char *p;
+	size_t			i;
+	unsigned char	*p;
 
 	i = 0;
-	p = (unsigned char *)s;
-	if(!s)
-		return (0);
-	while(i < n)
+	p = str;
+	while (i < n)
 	{
-		p[i] = (unsigned char) c;
+		p[i] = (unsigned char)c;
 		i++;
 	}
-	return(s);
-}
-
-int main()
-{
-    int myArray[4];
-    int c;
-    size_t n;
-
-    c = 'a';
-    n = sizeof(myArray);
-
-// Initialize myArray
-    for (size_t i = 0; i < n / sizeof(int); i++) {
-        myArray[i] = 0; // Set each element to a known value (e.g., 0)
-    }
-
-    ft_memset(myArray, c, n);
-
-    for (size_t i = 0; i < n / sizeof(int); i++) {
-       printf("myArray[%zu] = %c\n", i, myArray[i]);
-    }
-
-    printf("\nOriginal memset function:\n");
-    memset(myArray, c, n);
-
-    for (size_t i = 0; i < n / sizeof(int); i++) {
-        printf("myArray[%zu] = %c\n", i, myArray[i]);
-    }
-
-    return 0;
+	return (str);
 }

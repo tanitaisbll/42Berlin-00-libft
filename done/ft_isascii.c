@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:54:38 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 13:49:18 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 17:07:50 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_isascii(int c)
 {
-	if(c >= 0 && c <= 127)
-		return(1);
+	if (c >= 0 && c <= 127)
+		return (1);
 	else
-		return(0);
+		return (0);
 }

@@ -6,27 +6,16 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:29:50 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 13:49:22 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 17:08:19 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isprint(int c)
 {
-	if(c >= '0' && c <= '9')
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
-		return(0);
-}
-
-//function that checks if int c is a number
-
-int main()
-{
-    char test_char = '@';
-    int result = ft_isdigit(test_char);
-    printf("ft_isdigit('%c') = %d\n", test_char, result);
-
-    return 0;
+		return (0);
 }

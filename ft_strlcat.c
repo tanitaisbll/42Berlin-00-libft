@@ -6,7 +6,26 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:55:08 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/04 11:55:09 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 18:02:07 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
+{
+	size_t	destlen;
+	size_t	i;
+
+	if (destsize <= ft_strlen(dest))
+		return (destsize + ft_strlen(src));
+	destlen = ft_strlen(dest);
+	i = 0;
+	while (src[i] != '\0' && destlen + i < destsize - 1)
+	{
+		dest[destlen + i] = src[i];
+		i++;
+	}
+	dest[destlen + i] = '\0';
+	return (ft_strlen(dest) + ft_strlen(&src[i]));
+}

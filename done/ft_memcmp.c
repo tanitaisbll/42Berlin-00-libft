@@ -6,27 +6,26 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:54:51 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 13:49:33 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 17:10:47 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t i;
-	const unsigned char *s1bytes;
-	const unsigned char *s2bytes;
-	size_t compare;
+	size_t				i;
+	const unsigned char	*s1byte;
+	const unsigned char	*s2byte;
 
 	i = 0;
-	compare = 0;
-	s1bytes = s1;
-	s2bytes = s2;
+	s1byte = s1;
+	s2byte = s2;
 	while (i < n)
 	{
-		compare = s1bytes[i] - s2bytes[i];
+		if (s1byte[i] != s2byte[i])
+			return (s1byte[i] - s2byte[i]);
 		i++;
 	}
-	return((int)compare);
+	return (0);
 }

@@ -6,23 +6,22 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:54:32 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 13:49:03 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 17:05:53 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t num_elements, size_t size_elements)
+void	*ft_calloc(size_t num_elements, size_t element_size)
 {
-	size_t array_size;
-	void *ptr;
+	size_t	total_size;
+	void	*ptr;
 
-	array_size = num_elements * size_elements;
-	ptr = malloc(array_size);
-	if(ptr == NULL)
-		return(NULL);
-	if(ptr != NULL)
-		memset(ptr, 0, array_size);
-	return(ptr);
+	total_size = num_elements * element_size;
+	ptr = malloc(total_size);
+	if (ptr == NULL)
+		return (NULL);
+	if (ptr != NULL)
+		ft_memset(ptr, 0, total_size);
+	return (ptr);
 }
-

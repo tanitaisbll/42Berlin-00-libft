@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 12:06:55 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 18:00:13 by tgeiger          ###   ########.fr       */
+/*   Created: 2024/09/12 17:39:15 by tgeiger           #+#    #+#             */
+/*   Updated: 2024/09/12 17:39:26 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	if (!lst)
-		return (NULL);
-	while (lst -> next != NULL)
-		lst = lst -> next;
-	return (lst);
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	while (s1[i] != 0)
+	{
+		i++;
+	}
+	while (s2[j] != 0)
+	{
+		s1[i] = s2[j];
+		i++;
+		j++;
+	}
+	s1[i] = '\0';
+	return (s1);
 }
