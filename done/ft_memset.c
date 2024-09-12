@@ -6,12 +6,11 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:50:00 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/04 12:54:23 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 13:49:51 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void *ft_memset(void *s, int c, size_t n)
 {

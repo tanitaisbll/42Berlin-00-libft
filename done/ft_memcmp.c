@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/04 11:33:36 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 13:49:07 by tgeiger          ###   ########.fr       */
+/*   Created: 2024/09/04 11:54:51 by tgeiger           #+#    #+#             */
+/*   Updated: 2024/09/12 13:49:33 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || ( c >= 'A' && c <= 'Z'))
-		return(1);
-	else
-		return(0);
-}
+	size_t i;
+	const unsigned char *s1bytes;
+	const unsigned char *s2bytes;
+	size_t compare;
 
-int main()
-{
-    char test_char = '!';
-    int result = ft_isalnum(test_char);
-    printf("ft_isalnum('%c') = %d\n", test_char, result);
-
-    return 0;
+	i = 0;
+	compare = 0;
+	s1bytes = s1;
+	s2bytes = s2;
+	while (i < n)
+	{
+		compare = s1bytes[i] - s2bytes[i];
+		i++;
+	}
+	return((int)compare);
 }

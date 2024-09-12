@@ -6,11 +6,11 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:29:50 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/04 11:33:21 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 13:49:22 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int ft_isdigit(int c)
 {

@@ -6,12 +6,11 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:54:28 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/04 12:43:16 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 13:48:57 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <strings.h>
+#include "libft.h"
 
 void ft_bzero(void *s, size_t n)
 {

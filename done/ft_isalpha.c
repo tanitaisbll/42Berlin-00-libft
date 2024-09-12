@@ -6,11 +6,11 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:29:16 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/04 11:31:57 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/12 13:49:12 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> //needed for printf in test main
+#include "libft.h"
 
 int ft_isalpha(int c)
 {
