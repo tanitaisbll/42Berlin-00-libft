@@ -1,6 +1,6 @@
 # 42Berlin-00-libft
-My own library including standard functions in C 
-Including the following functions:
+My own library including standard and non-standard functions in C. <br>
+Includes the following functions:
 
 ## ctype.h
 int		ft_isalnum(int c);
