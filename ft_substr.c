@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 17:45:56 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:45:59 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 14:52:22 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,5 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	str[len] = '\0';
 	return (str);
 }
+
+//creates new string including a substring of s using the given start and len

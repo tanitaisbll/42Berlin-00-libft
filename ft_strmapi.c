@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 17:44:05 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:44:18 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 14:40:39 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ int, char))
 	}
 	return (result);
 }
+
+// apllies function char (*f)(unsigned int, char) to string

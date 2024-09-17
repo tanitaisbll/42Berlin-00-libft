@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 12:06:48 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:59:31 by tgeiger          ###   ########.fr       */
+/*   Created: 2024/09/04 11:54:42 by tgeiger           #+#    #+#             */
+/*   Updated: 2024/09/17 15:23:12 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
+int	ft_isprint(int c)
 {
-	if (!lst)
-		return ;
-	del(lst -> content);
-	free(lst);
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
 }

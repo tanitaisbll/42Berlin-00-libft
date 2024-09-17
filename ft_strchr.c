@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 17:40:20 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:40:23 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 12:57:15 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,5 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)str);
 	return (0);
 }
+
+//searches for c in str and gives back a pointer to the position in the str

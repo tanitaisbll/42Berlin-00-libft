@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:55:11 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:44:29 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 14:41:26 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,4 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+//compares n bytes of the strings

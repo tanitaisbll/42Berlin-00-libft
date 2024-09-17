@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 17:43:12 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:43:14 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 13:12:06 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (src_len);
 }
+
+//src gets copied into dest considering the size of dest

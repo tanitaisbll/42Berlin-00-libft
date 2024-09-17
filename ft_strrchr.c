@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:55:18 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:44:54 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 14:44:42 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,5 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (0);
 }
+
+//searches for the last occurance of a character in a string

@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:55:08 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 18:02:07 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 13:09:48 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	dest[destlen + i] = '\0';
 	return (ft_strlen(dest) + ft_strlen(&src[i]));
 }
+
+//src gets attached to dest while size of dest is considered

@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:55:15 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:44:43 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 14:43:01 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+//searches for string needle in string haystack considering the len of haystack

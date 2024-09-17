@@ -6,7 +6,7 @@
 /*   By: tgeiger <tgeiger@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 17:45:16 by tgeiger           #+#    #+#             */
-/*   Updated: 2024/09/12 17:45:34 by tgeiger          ###   ########.fr       */
+/*   Updated: 2024/09/17 14:50:53 by tgeiger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,3 +78,5 @@ char	*ft_strtrim(const char *s1, const char *set)
 	trimmed[len] = '\0';
 	return (trimmed);
 }
+
+// removes the string set in the string s1
